@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Tasker Application</title>
+
+        <link rel="stylesheet" type="text/css" href="css/site.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+        <link rel="stylesheet" type="text/css" href="css/chosen.css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/chosen.jquery.js"></script>
+        <script type="text/javascript" src="js/tasker.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="task" class="control-label task-label">Task</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="task" placeholder="write your task">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <select id="urgency-select" data-placeholder="! Urgency" style="width: 280px;" multiple class="urgency-chosen-select">
+                                <option value="Low Urgency">Low Urgency</option>
+                                <option value="High Urgency">High Urgency</option>
+                                <option value="Low Importance">Low Importance</option>
+                                <option value="High Importance">High Importance</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="time" placeholder="# Time">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <select data-placeholder="@ Who" style="width: 230px;" multiple class="who-chosen-select">
+                                <option>Rahul</option>
+                                <option>Ben</option>
+                                <option>Lucas</option>
+                                <option>John</option>
+                                <option>Lina</option>
+                                <option>Any</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="when" placeholder="* When">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button id="lets-do-it" type="button" class="btn btn-primary btn-lg do-it-btn" onclick="tasker.letsDoIt()">Let&apos;s Do It</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            tasker.init();
+        });
+    </script>
+</html>
