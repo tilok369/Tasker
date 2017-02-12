@@ -1,29 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Tasker ###
+Tasker  is a simple JavaScript based application to demonstrate the client side version of a task creation
+application.
 
-### What is this repository for? ###
+### Run it ###
+Just run the index.html file in browser to see it in action.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Help needed? ###
+Please contact me on www.tanjeer.com for any kind of query of confusion.
