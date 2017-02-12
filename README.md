@@ -1,5 +1,3 @@
-# README #
-
 ### Tasker ###
 Tasker  is a simple JavaScript based application to demonstrate the client side version of a task creation
 application.
